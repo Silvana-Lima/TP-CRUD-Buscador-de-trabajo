@@ -28,22 +28,20 @@
           
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
-                <a class="button is-link has-text-white mt-5">
+                <a class="button btn-home is-link has-text-white mt-5">
                   Home
                 </a>
           
-                <a class="button is-link has-text-white mt-5">
-                  Create Jobs
+                <a class="button btn-create-job is-link has-text-white mt-5">
+                  Create Job
                 </a>
-
               </div>
-          
             </div>
           </nav>
     </header>
-    <section class="section-home">
-         <div class="container cont-form-search-job mt-4">
-                    <form action="" class="form-search-job m-3">
+    <section class="section section-home">
+         <div class="container cont-form-search-job">
+                    <form action="" class="form-search-job">
             
                         <div class="field">
                             <div class="control is-expanded">
@@ -89,8 +87,8 @@
                     
                     </form>
          </div>
-         <div class="container cont-cards-jobs">
-            <div class="columns m-3">
+         <div class="container mt-4">
+            <div class="columns cont-cards-jobs is-flex is-flex-wrap-wrap">
                 <div class="column is-one-quarter">
                     <div class="card">
                         <header class="card-header">
@@ -117,12 +115,12 @@
             </div>
          </div>
     </section>
-    <section class="section-see-details is-hidden">
+    <section class="section section-see-details is-hidden">
         <div class="container cont-see-job">
             <div class="columns">
-                <div class="column"></div>
+                <div class="column is-hidden-mobile"></div>
                 <div class="column is-two-fifths">
-                    <div class="card m-3">
+                    <div class="card">
                         <header class="card-header">
                             <p class="card-header-title">
                               Title Job
@@ -145,15 +143,15 @@
                           </footer>
                     </div>
                 </div>
-                <div class="column"></div>
+                <div class="column is-hidden-mobile"></div>
             </div>
         </div>
         
         <div class="container cont-edit-job">
             <div class="columns">
-                <div class="column"></div>
+                <div class="column is-hidden-mobile"></div>
                 <div class="column is-half">
-                    <form action="" class="form-edit-job m-3">
+                    <form action="" class="form-edit-job">
                         <div class="field">
                             <label class="label">Job Title</label>
                             <div class="control">
@@ -195,7 +193,7 @@
             
                     </form>
                 </div>
-                <div class="column"></div>
+                <div class="column is-hidden-mobile"></div>
             </div>
         </div>
 
@@ -216,9 +214,12 @@
               </div>
         </div>
     </section>
-    <section class="section-create-job is-hidden">
+    <section class="section section-create-job is-hidden">
         <div class="container cont-create-job">
-            <form action="" class="form-create-job m-3">
+          <div class="columns">
+            <div class="column is-hidden-mobile"></div>
+            <div class="column is-two-thirds">
+              <form action="" class="form-create-job">
                 <div class="field">
                     <label class="label">Job Title</label>
                     <div class="control">
@@ -259,6 +260,9 @@
                   </div>
     
             </form>
+            </div>
+            <div class="column is-hidden-mobile"></div>
+          </div>
         </div>
 
     </section>
