@@ -1,0 +1,12 @@
+
+@media screen and (min-width: 570px) {
+  .form-search-job {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .field{
+    margin: 0 5px;
+  }
+}

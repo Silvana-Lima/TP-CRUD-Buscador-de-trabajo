@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CRUD - Buscador de trabajo">
+    <meta name="author" content="Silvana Lima">
+    <!-- *** Framework Bulma *** -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Careers</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar has-background-link" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <h1 class="title is-2 has-text-white m-3">
+                Careers
+              </h1>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="button is-link has-text-white mt-5">
+                  Home
+                </a>
+          
+                <a class="button is-link has-text-white mt-5">
+                  Create Jobs
+                </a>
+
+              </div>
+          
+            </div>
+          </nav>
+    </header>
+    <section class="section-home">
+         <div class="container cont-form-search-job mt-4">
+                    <form action="" class="form-search-job m-3">
+            
+                        <div class="field">
+                            <div class="control is-expanded">
+                                <div class="select select-location is-fullwidth is-link">
+                                    <select>
+                                        <option>Location</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="field">
+                            <div class="control is-expanded">
+                                <div class="select select-seniority is-fullwidth is-link">
+                                    <select>
+                                        <option>Seniority</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="field">
+                            <div class="control is-expanded">
+                                <div class="select select-category is-fullwidth is-link">
+                                    <select>
+                                        <option>Category</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    
+                       <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link">Search</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link is-outlined">Clear</button>
+                            </div>
+                        </div>
+                    
+                    </form>
+         </div>
+         <div class="container cont-cards-jobs">
+            <div class="columns m-3">
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title has-text-link">
+                              Title Job
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                              <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                              </span>
+                            </button>
+                          </header>
+                          <div class="card-content">
+                            <div class="content">
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum quia, et repellat ut sapiente dolores, doloremque neque eius est optio consequatur ducimus qui in! Optio quis nisi tenetur amet!</p>
+                             <span class="tag m-1 has-background-link-light">Location</span><span class="tag m-1 has-background-link-light">Seniority</span><span class="tag m-1 has-background-link-light">Category</span>
+                            </div>
+                          </div>
+                          <footer class="card-footer">
+                            <a href="#" class="card-footer-item">See Details</a>
+                          </footer>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+    <section class="section-see-details is-hidden">
+        <div class="container cont-see-job">
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column is-two-fifths">
+                    <div class="card m-3">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                              Title Job
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                              <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                              </span>
+                            </button>
+                          </header>
+                          <div class="card-content">
+                            <div class="content">
+                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum quia, et repellat ut sapiente dolores, doloremque neque eius est optio consequatur ducimus qui in! Optio quis nisi tenetur amet!</p>
+                             <span class="tag m-1">Location</span><span class="tag m-1">Seniority</span><span class="tag m-1">Category</span>
+                            </div>
+                          </div>
+                          <footer class="card-footer">
+                            <button class="button card-footer-item has-background-success">Edit Job</a>
+                            <button class="button card-footer-item has-background-danger">Delete Job</a>
+                          </footer>
+                    </div>
+                </div>
+                <div class="column"></div>
+            </div>
+        </div>
+        
+        <div class="container cont-edit-job">
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column is-half">
+                    <form action="" class="form-edit-job m-3">
+                        <div class="field">
+                            <label class="label">Job Title</label>
+                            <div class="control">
+                              <input class="input is-link" type="text" placeholder="Job Title">
+                            </div>
+                          </div>
+            
+                          <div class="field">
+                            <label class="label">Description</label>
+                            <div class="control">
+                              <textarea class="textarea is-link" placeholder="Description"></textarea>
+                            </div>
+                          </div>
+        
+                          <div class="field">
+                            <label class="label">Tags</label>
+                            <div class="control">
+                              <input class="input is-link" type="text" placeholder="Location">
+                            </div>
+                          </div>
+                          <div class="field">
+                            
+                            <div class="control">
+                              <input class="input is-link" type="text" placeholder="Seniority">
+                            </div>
+                          </div>
+                          <div class="field">
+                            
+                            <div class="control">
+                              <input class="input is-link" type="text" placeholder="Category">
+                            </div>
+                          </div>
+        
+                          <div class="field">
+                            <div class="control">
+                              <button class="button is-link">Edit</button>
+                            </div>
+                          </div>
+            
+                    </form>
+                </div>
+                <div class="column"></div>
+            </div>
+        </div>
+
+        <div class="container cont-modal-delete-job">
+            <div class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                  <div class="box is-flex is-flex-direction-column is-justify-content-center has-background-danger-light">
+                    <p class="has-text-centered mb-3 has-text-danger-dark">Are you sure to delete this job?</p>
+                    <div class="container">
+                        <button class="button btn-delete-job m-1 has-background-danger has-text-white">Delete Job</button>
+                        <button class="button btn-cancel-delete-job m-1 has-background-grey-light has-text-white">Cancel</button>
+                    </div>
+                    
+                </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+        </div>
+    </section>
+    <section class="section-create-job is-hidden">
+        <div class="container cont-create-job">
+            <form action="" class="form-create-job m-3">
+                <div class="field">
+                    <label class="label">Job Title</label>
+                    <div class="control">
+                      <input class="input is-link" type="text" placeholder="Job Title">
+                    </div>
+                  </div>
+    
+                  <div class="field">
+                    <label class="label">Description</label>
+                    <div class="control">
+                      <textarea class="textarea is-link" placeholder="Description"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">Tags</label>
+                    <div class="control">
+                      <input class="input is-link" type="text" placeholder="Location">
+                    </div>
+                  </div>
+                  <div class="field">
+                    
+                    <div class="control">
+                      <input class="input is-link" type="text" placeholder="Seniority">
+                    </div>
+                  </div>
+                  <div class="field">
+                    
+                    <div class="control">
+                      <input class="input is-link" type="text" placeholder="Category">
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <button class="button is-link">Submit</button>
+                    </div>
+                  </div>
+    
+            </form>
+        </div>
+
+    </section>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
