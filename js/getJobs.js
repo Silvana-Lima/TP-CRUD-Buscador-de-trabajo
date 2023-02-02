@@ -64,7 +64,7 @@ const showDetailJob = (job)=>{
 const openDetailsJob = (id) => {
     changeScreen($$sections, $sectionSeeDetails)
      
-    $btnDeleteJob.setAttribute("data-id", id);
+    $btnModalDeleteJob.setAttribute("data-id", id);
     $btnEditJob.setAttribute("data-id", id);
 
     getJob(id)

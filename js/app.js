@@ -34,6 +34,9 @@ const $cardDetailDescription = $(".card-detail-description");
 const $cardDetailLocation = $(".card-detail-location");
 const $cardDetailSeniority = $(".card-detail-seniority");
 const $cardDetailCategory = $(".card-detail-category");
+const $modalDeleteJob = $(".modal-delete-job");
+const $btnModalDeleteJob = $(".btn-modal-delete-job");
+const $btnModalCancelDelete = $(".btn-modal-cancel-delete-job");
 
 
 

@@ -99,8 +99,7 @@
                 <div class="column column-card is-two-fifths">
                     <div class="card card-detail-job">
                         <header class="card-header">
-                            <p class="card-header-title card-detail-title">
-                            </p>
+                            <p class="card-header-title card-detail-title"></p>
                             <button class="card-header-icon" aria-label="more options">
                               <span class="icon">
                                 <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -110,7 +109,9 @@
                           <div class="card-content">
                             <div class="content">
                              <p class="card-detail-description"></p>
-                             <span class="tag m-1 card-detail-location"></span><span class="tag m-1 card-detail-seniority"></span><span class="tag m-1 card-detail-category"></span>
+                             <span class="tag m-1 card-detail-location"></span>
+                             <span class="tag m-1 card-detail-seniority"></span>
+                             <span class="tag m-1 card-detail-category"></span>
                             </div>
                           </div>
                           <footer class="card-footer">
@@ -174,19 +175,19 @@
         </div>
 
         <div class="container cont-modal-delete-job">
-            <div class="modal">
+            <div class="modal modal-delete-job">
                 <div class="modal-background"></div>
                 <div class="modal-content">
                   <div class="box is-flex is-flex-direction-column is-justify-content-center has-background-danger-light">
                     <p class="has-text-centered mb-3 has-text-danger-dark">Are you sure to delete this job?</p>
                     <div class="container">
-                        <button class="button btn-delete-job-sure m-1 has-background-danger has-text-white">Delete Job</button>
-                        <button class="button btn-cancel-delete-job m-1 has-background-grey-light has-text-white">Cancel</button>
+                        <button class="button btn-modal-delete-job m-1 has-background-danger has-text-white">Delete Job</button>
+                        <button class="button btn-modal-cancel-delete-job m-1 has-background-grey-light has-text-white">Cancel</button>
                     </div>
                     
                 </div>
                 </div>
-                <button class="modal-close is-large" aria-label="close"></button>
+                <!-- <button class="modal-close is-large" aria-label="close"></button> -->
               </div>
         </div>
     </section>
@@ -247,6 +248,5 @@
     <script src="./js/getJobs.js"></script>
     <script src="./js/createJob.js"></script>
     <script src="./js/deleteJob.js"></script>
-
 </body>
 </html>

@@ -15,7 +15,15 @@ const deleteJob = async(id)=>{
 
 // --->>> Events <<<---
 
-$btnDeleteJob.addEventListener("click", (e)=>{
+$btnDeleteJob.addEventListener("click", ()=> $modalDeleteJob.classList.add("is-active"))
+
+$btnModalDeleteJob.addEventListener("click", (e)=>{
+    $modalDeleteJob.classList.remove("is-active");
     const id = e.target.getAttribute("data-id");
-    deleteJob(id)
+    deleteJob(id) 
+})
+
+$btnModalCancelDelete.addEventListener("click", ()=>{
+    $modalDeleteJob.classList.remove("is-active");
+    changeScreen($$sections, $sectionHome);
 })
