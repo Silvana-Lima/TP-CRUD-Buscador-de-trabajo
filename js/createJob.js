@@ -1,19 +1,3 @@
-// --->>> DOM <<<---
-
-const getJobForm = ()=>{
-    const job = {
-        name: $inputTitleCreateJob.value,
-        description: $inputDescriptionCreateJob.value,
-        location: $inputLocationCreateJob.value,
-        seniority: $inputSeniorityCreateJob.value,
-        category: $inputCategoryCreateJob.value
-
-    }
-
-    return job;
-
-}
-
 // --->>> Methods <<<---
 
 const createJob = async()=>{
@@ -33,6 +17,22 @@ const createJob = async()=>{
     } finally {
         window.location.href = "index.html";
     }
+
+}
+
+// --->>> DOM <<<---
+
+const getJobForm = ()=>{
+    const job = {
+        name: $inputTitleCreateJob.value,
+        description: $inputDescriptionCreateJob.value,
+        location: $inputLocationCreateJob.value,
+        seniority: $inputSeniorityCreateJob.value,
+        category: $inputCategoryCreateJob.value
+
+    }
+
+    return job;
 
 }
 

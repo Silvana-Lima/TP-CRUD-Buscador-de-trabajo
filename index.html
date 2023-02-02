@@ -96,11 +96,10 @@
         <div class="container cont-see-job">
             <div class="columns">
                 <div class="column is-hidden-mobile"></div>
-                <div class="column is-two-fifths">
-                    <div class="card">
+                <div class="column column-card is-two-fifths">
+                    <div class="card card-detail-job">
                         <header class="card-header">
-                            <p class="card-header-title">
-                              Title Job
+                            <p class="card-header-title card-detail-title">
                             </p>
                             <button class="card-header-icon" aria-label="more options">
                               <span class="icon">
@@ -110,13 +109,13 @@
                           </header>
                           <div class="card-content">
                             <div class="content">
-                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum quia, et repellat ut sapiente dolores, doloremque neque eius est optio consequatur ducimus qui in! Optio quis nisi tenetur amet!</p>
-                             <span class="tag m-1">Location</span><span class="tag m-1">Seniority</span><span class="tag m-1">Category</span>
+                             <p class="card-detail-description"></p>
+                             <span class="tag m-1 card-detail-location"></span><span class="tag m-1 card-detail-seniority"></span><span class="tag m-1 card-detail-category"></span>
                             </div>
                           </div>
                           <footer class="card-footer">
-                            <button class="button card-footer-item has-background-success">Edit Job</a>
-                            <button class="button card-footer-item has-background-danger">Delete Job</a>
+                            <button class="button card-footer-item has-background-success btn-edit-job">Edit Job</a>
+                            <button class="button card-footer-item has-background-danger btn-delete-job">Delete Job</a>
                           </footer>
                     </div>
                 </div>
@@ -124,10 +123,10 @@
             </div>
         </div>
         
-        <div class="container cont-edit-job">
+        <div class="container cont-edit-job mt-4 is-hidden">
             <div class="columns">
                 <div class="column is-hidden-mobile"></div>
-                <div class="column is-half">
+                <div class="column is-three-fifths">
                     <form action="" class="form-edit-job">
                         <div class="field">
                             <label class="label">Job Title</label>
@@ -181,7 +180,7 @@
                   <div class="box is-flex is-flex-direction-column is-justify-content-center has-background-danger-light">
                     <p class="has-text-centered mb-3 has-text-danger-dark">Are you sure to delete this job?</p>
                     <div class="container">
-                        <button class="button btn-delete-job m-1 has-background-danger has-text-white">Delete Job</button>
+                        <button class="button btn-delete-job-sure m-1 has-background-danger has-text-white">Delete Job</button>
                         <button class="button btn-cancel-delete-job m-1 has-background-grey-light has-text-white">Cancel</button>
                     </div>
                     
@@ -247,6 +246,7 @@
     <script src="./js/app.js"></script>
     <script src="./js/getJobs.js"></script>
     <script src="./js/createJob.js"></script>
+    <script src="./js/deleteJob.js"></script>
 
 </body>
 </html>
