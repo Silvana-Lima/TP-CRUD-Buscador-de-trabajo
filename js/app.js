@@ -37,8 +37,14 @@ const $cardDetailCategory = $(".card-detail-category");
 const $modalDeleteJob = $(".modal-delete-job");
 const $btnModalDeleteJob = $(".btn-modal-delete-job");
 const $btnModalCancelDelete = $(".btn-modal-cancel-delete-job");
-
-
+const $contEditJob = $(".cont-edit-job");
+const $formEditJob = $(".form-edit-job");
+const $inputTitleEditJob = $(".input-title-edit-job");
+const $textAreaDescriptionEditJob = $(".textarea-description-edit-job");
+const $inputLocationEditJob = $(".input-location-edit-job");
+const $inputSeniorityEditJob = $(".input-seniority-edit-job");
+const $inputCategoryEditJob = $(".input-category-edit-job");
+const $btnSubmitEditForm = $(".btn-submit-form-edit");
 
 
 // ****--->>> Functions to change the screens<<<---****

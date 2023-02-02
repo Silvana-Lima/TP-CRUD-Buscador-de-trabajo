@@ -21,6 +21,7 @@ const getJob = async(id)=>{
         const job = await response.json();
 
         showDetailJob(job);
+        fillForm(job)
     } catch (error) {
         alert("Error to get job!!")
     }
@@ -65,7 +66,7 @@ const openDetailsJob = (id) => {
     changeScreen($$sections, $sectionSeeDetails)
      
     $btnModalDeleteJob.setAttribute("data-id", id);
-    $btnEditJob.setAttribute("data-id", id);
+    $btnSubmitEditForm.setAttribute("data-id", id);
 
     getJob(id)
     
