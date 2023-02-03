@@ -14,7 +14,7 @@ const $$sections = $$(".section");
 const $sectionHome = $(".section-home");
 const $btnCreateJob = $(".btn-create-job");
 const $btnHome = $(".btn-home");
-const $contCards = $(".cont-cards-jobs");
+const $contCardsJobs = $(".cont-cards-jobs")
 
 // Section Create Job
 const $sectionCreateJob = $(".section-create-job");

@@ -30,8 +30,12 @@ const getJob = async(id)=>{
 // --->>> DOM <<<---
 
 const renderJobs = (jobs) =>{
+
+    $contCardsJobs.innerHTML = "";
+    $contCardsJobs.innerHTML = `<div class="columns columns-cards-jobs is-flex is-flex-wrap-wrap"></div>`;
+
     for (const {name, description, location, seniority, category, id} of jobs) {
-        $contCards.innerHTML += 
+        $(".columns-cards-jobs").innerHTML += 
         `<div class="column is-one-quarter">
         <div class="card card-job">
             <header class="card-header">
