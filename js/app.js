@@ -14,7 +14,12 @@ const $$sections = $$(".section");
 const $sectionHome = $(".section-home");
 const $btnCreateJob = $(".btn-create-job");
 const $btnHome = $(".btn-home");
-const $contCardsJobs = $(".cont-cards-jobs")
+const $contCardsJobs = $(".cont-cards-jobs");
+const $selecLocation = $(".select-location");
+const $selecSeniority = $(".select-seniority");
+const $selecCategory = $(".select-category");
+const $formSearchJob = $(".form-search-job");
+const $btnClear = $(".btn-clear");
 
 // Section Create Job
 const $sectionCreateJob = $(".section-create-job");

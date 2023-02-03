@@ -5,8 +5,9 @@ const getJobs = async()=>{
     try {
         const response = await fetch(`${BASE_URL}/jobs`);
         const jobs = await response.json();
-
+        
         renderJobs(jobs);
+        completeSelect(jobs);
     } catch (error) {
         alert("Error to get jobs!!")
     }
