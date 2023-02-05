@@ -41,6 +41,7 @@ const getJobForm = ()=>{
 
 $formCreateJob.addEventListener("submit", (e)=>{
    e.preventDefault();
-   createJob();
+   validateForm();
+   showErrors();
 
 })

@@ -35,6 +35,12 @@ const $inputDescriptionCreateJob = $("#input-description-create-job");
 const $inputLocationCreateJob = $("#input-location-create-job");
 const $inputSeniorityCreateJob = $("#input-seniority-create-job");
 const $inputCategoryCreateJob = $("#input-category-create-job");
+const $errorNotification = $(".error-notification");
+let validTitle; 
+let validDescription; 
+let validLocation; 
+let validSeniority; 
+let validCategory;
 
 // Section See Details
 const $sectionSeeDetails = $(".section-see-details");
@@ -72,7 +78,9 @@ const changeScreen = (hideSections, showSection) => {
 
 $itemCreateJob.addEventListener("click", ()=> changeScreen($$sections, $sectionCreateJob));
 
-$itemHome.addEventListener("click", ()=> changeScreen($$sections, $sectionHome));
+$itemHome.addEventListener("click", ()=> {
+  changeScreen($$sections, $sectionHome);
+  $errorNotification.classList.add("is-hidden");});
 
 // ****---- Event to active NavBurger Bulma ----****
 
