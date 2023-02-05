@@ -1,13 +1,26 @@
 // --->>> Methods <<<---
+const getSelect = async()=>{
+
+    try {
+        const response = await fetch(`${BASE_URL}/jobs`);
+        const jobs = await response.json();
+        completeSelect(jobs);
+    } catch (error) {
+        alert("Error to get selecst!!")
+    }
+
+}
+
+getSelect()
 
 const getJobs = async()=>{
 
     try {
         const response = await fetch(`${BASE_URL}/jobs`);
         const jobs = await response.json();
-        
-        renderJobs(jobs);
-        completeSelect(jobs);
+
+        renderJobs(filterJobs(jobs));
+
     } catch (error) {
         alert("Error to get jobs!!")
     }
@@ -54,7 +67,7 @@ const renderJobs = (jobs) =>{
               <footer class="card-footer">
                 <a href="#" class="card-footer-item" onclick="openDetailsJob(${id})">See Details</a>
               </footer>
-        </div>`
+        </div></div>`
     }
     }
 

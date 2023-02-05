@@ -1,3 +1,5 @@
+// --->>> DOM <<<---
+
 const completeSelect = (jobs) => {
     $selecLocation.innerHTML = "";
     $selecSeniority.innerHTML = "";
@@ -40,3 +42,67 @@ const completeSelect = (jobs) => {
     $selecCategory.innerHTML += `<option value="${category}">${category}</option>`;
   }
 };
+
+const filterByLocation =(filter, jobs)=>{
+
+    let location = [];
+    if (filter === "Location") {
+      location = jobs;
+    } else {
+      location = jobs.filter((job)=> job.location == filter)
+    }
+    return location;
+    
+}
+
+const filterBySeniority =(filter, jobs)=>{
+
+  let seniority = [];
+  if (filter === "Seniority") {
+    seniority = jobs;
+  } else {
+    seniority = jobs.filter((job)=> job.seniority == filter)
+  }
+  return seniority;
+  
+}
+
+const filterByCategory =(filter, jobs)=>{
+
+  let category = [];
+  if (filter === "Category") {
+    category = jobs;
+  } else {
+    category = jobs.filter((job)=> job.category == filter)
+  }
+  return category;
+  
+}
+const filterJobs = (jobs)=>{
+  let jobsFiltered = filterByLocation($selecLocation.value, jobs);
+  jobsFiltered = filterBySeniority($selecSeniority.value, jobsFiltered);
+  jobsFiltered = filterByCategory($selecCategory.value, jobsFiltered);
+
+  if (jobsFiltered.length === 0 ) {
+    $contNoResults.innerHTML = `<p class="has-text-centered mt-4 has-text-link has-text-weight-bold">
+    There are not results for your search...
+  </p>`
+  } else {
+    $contNoResults.innerHTML = ``
+  }
+  
+  return jobsFiltered;
+}
+
+// --->>> Events <<<---
+
+$formSearchJob.addEventListener("submit", (e)=>{
+    e.preventDefault();
+   getJobs()
+})
+
+$btnClear.addEventListener("click", (e)=>{
+  e.preventDefault();
+  window.location.href = "index.html"
+})
+

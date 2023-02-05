@@ -15,6 +15,7 @@ const $sectionHome = $(".section-home");
 const $btnCreateJob = $(".btn-create-job");
 const $btnHome = $(".btn-home");
 const $contCardsJobs = $(".cont-cards-jobs");
+const $contNoResults = $(".cont-no-results")
 const $selecLocation = $(".select-location");
 const $selecSeniority = $(".select-seniority");
 const $selecCategory = $(".select-category");
