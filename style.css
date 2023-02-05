@@ -1,3 +1,14 @@
+.section{
+  padding: 1.5rem;
+  }
+
+.card-description {
+  max-height: 120px;
+  overflow: hidden;
+  display: inline-block;
+  
+}
+
 
 @media screen and (min-width: 570px) {
   .form-search-job {
@@ -9,4 +20,15 @@
   .field{
     margin: 0 5px;
   }
+}
+
+@media screen and (min-width: 1024px){
+  .card-job{
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  }
+  
 }

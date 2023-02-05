@@ -7,13 +7,18 @@ const $ = (selector)=> document.querySelector(selector);
 
 const BASE_URL = "https://63d98d7019fffcd620b78641.mockapi.io/api";
 
+// Nav
+
+const $btnNavBarBurger = $(".navbar-burger");
+const $navBarMenu = $(".navbar-menu");
+
 // Sections
 const $$sections = $$(".section");
 
 // Section home
 const $sectionHome = $(".section-home");
-const $btnCreateJob = $(".btn-create-job");
-const $btnHome = $(".btn-home");
+const $itemCreateJob = $(".item-create-job");
+const $itemHome = $(".item-home");
 const $contCardsJobs = $(".cont-cards-jobs");
 const $contNoResults = $(".cont-no-results")
 const $selecLocation = $(".select-location");
@@ -65,7 +70,14 @@ const changeScreen = (hideSections, showSection) => {
 
 // ****--->>> Events to change the screens <<<---****
 
-$btnCreateJob.addEventListener("click", ()=> changeScreen($$sections, $sectionCreateJob));
+$itemCreateJob.addEventListener("click", ()=> changeScreen($$sections, $sectionCreateJob));
 
-$btnHome.addEventListener("click", ()=> changeScreen($$sections, $sectionHome));
+$itemHome.addEventListener("click", ()=> changeScreen($$sections, $sectionHome));
+
+// ****---- Event to active NavBurger Bulma ----****
+
+$btnNavBarBurger.addEventListener("click", ()=> {
+  $navBarMenu.classList.toggle("is-active");
+  $btnNavBarBurger.classList.toggle("is-active");
+});
 

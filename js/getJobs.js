@@ -46,28 +46,33 @@ const getJob = async(id)=>{
 const renderJobs = (jobs) =>{
 
     $contCardsJobs.innerHTML = "";
-    $contCardsJobs.innerHTML = `<div class="columns columns-cards-jobs is-flex is-flex-wrap-wrap"></div>`;
+    $contCardsJobs.innerHTML = `<div class="columns is-desktop columns-cards-jobs is-flex-wrap-wrap"></div>`;
 
     for (const {name, description, location, seniority, category, id} of jobs) {
         $(".columns-cards-jobs").innerHTML += 
-        `<div class="column is-one-quarter">
-        <div class="card card-job">
+        `<div class="column is-one-quarter-desktop">
+          <div class="card card-job">
             <header class="card-header">
                 <p class="card-header-title has-text-link">
                   ${name}
                 </p>
                 
-              </header>
-              <div class="card-content">
+            </header>
+            <div class="card-content">
                 <div class="content">
-                 <p>${description}</p>
-                 <span class="tag m-1 has-background-link-light">${location}</span><span class="tag m-1 has-background-link-light">${seniority}</span><span class="tag m-1 has-background-link-light">${category}</span>
-                </div>
-              </div>
-              <footer class="card-footer">
+                 <p class="card-description">${description}</p>
+                 </div>
+                 <div>
+                 <span class="tag m-1 has-background-link has-text-white">${location}</span>
+                 <span class="tag m-1 has-background-link has-text-white">${seniority}</span>
+                 <span class="tag m-1 has-background-link has-text-white">${category}</span>
+                 </div>
+            </div>
+            <footer class="card-footer">
                 <a href="#" class="card-footer-item" onclick="openDetailsJob(${id})">See Details</a>
-              </footer>
-        </div></div>`
+            </footer>
+        </div>
+        </div>`
     }
     }
 
