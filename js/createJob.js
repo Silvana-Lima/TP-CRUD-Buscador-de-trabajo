@@ -36,6 +36,23 @@ const getJobForm = ()=>{
 
 }
 
+const cleanerFormCreateJobs = ()=>{
+ $inputTitleCreateJob.value = "";
+ $inputDescriptionCreateJob.value = "";
+ $inputLocationCreateJob.value = "";
+ $inputSeniorityCreateJob.value = "";
+ $inputCategoryCreateJob.value = "";
+
+ $errorNotification.classList.add("is-hidden");
+
+ changeColorInput($inputTitleCreateJob, "is-danger", "is-link");
+ changeColorInput($inputDescriptionCreateJob, "is-danger", "is-link");
+ changeColorInput($inputLocationCreateJob, "is-danger", "is-link");
+ changeColorInput($inputSeniorityCreateJob, "is-danger", "is-link");
+ changeColorInput($inputCategoryCreateJob, "is-danger", "is-link");
+
+}
+
 
 // --->>> Events <<<---
 

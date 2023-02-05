@@ -1,20 +1,23 @@
 const validateForm = ()=>{
-    validTitle = $inputTitleCreateJob.value.length > 3;
-    validDescription = $inputDescriptionCreateJob.value.length > 3;
-    validLocation = $inputLocationCreateJob.value.length > 3;
-    validSeniority = $inputSeniorityCreateJob.value.length > 3;
-    validCategory = $inputCategoryCreateJob.value.length > 3;
+    validTitle = $inputTitleCreateJob.value.length > 2;
+    validDescription = $inputDescriptionCreateJob.value.length > 2;
+    validLocation = $inputLocationCreateJob.value.length > 2;
+    validSeniority = $inputSeniorityCreateJob.value.length > 2;
+    validCategory = $inputCategoryCreateJob.value.length > 2;
+}
+
+const changeColorInput = (input, removeColor, addColor) =>{
+    input.classList.remove(removeColor);
+    input.classList.add(addColor);
 }
 
 const inputError = (inputValid, inputDom)=>{
     if (!inputValid) {
         $errorNotification.classList.remove("is-hidden");
-        inputDom.classList.remove("is-link");
-        inputDom.classList.add("is-danger");
+        changeColorInput(inputDom, "is-link", "is-danger");
     } else {
         $errorNotification.classList.add("is-hidden");
-        inputDom.classList.remove("is-danger");
-        inputDom.classList.add("is-link");
+        changeColorInput(inputDom, "is-danger", "is-link");
     }
 }
 

@@ -80,7 +80,8 @@ $itemCreateJob.addEventListener("click", ()=> changeScreen($$sections, $sectionC
 
 $itemHome.addEventListener("click", ()=> {
   changeScreen($$sections, $sectionHome);
-  $errorNotification.classList.add("is-hidden");});
+  cleanerFormCreateJobs();
+});
 
 // ****---- Event to active NavBurger Bulma ----****
 
