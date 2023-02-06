@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-link-light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -107,6 +107,62 @@
              <figure class="is-flex is-justify-content-center m-6" ><img src="./assets/gif-loading.gif" alt=""></figure> 
          </div>
     </section>
+    <section class="section section-create-job is-hidden">
+      <div class="container cont-create-job">
+        <div class="columns">
+          <div class="column is-hidden-mobile"></div>
+          <div class="column is-two-thirds">
+            <form action="" class="form-create-job">
+              <div class="field">
+                  <label class="label">Job Title</label>
+                  <div class="control">
+                    <input class="input is-link" id="input-title-create-job" type="text" placeholder="Job Title">
+                  </div>
+                </div>
+  
+                <div class="field">
+                  <label class="label">Description</label>
+                  <div class="control">
+                    <textarea class="textarea is-link" placeholder="Description" id="input-description-create-job"></textarea>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Tags</label>
+                  <div class="control">
+                    <input class="input is-link" id="input-location-create-job" type="text" placeholder="Location">
+                  </div>
+                </div>
+                <div class="field">
+                  
+                  <div class="control">
+                    <input class="input is-link" id="input-seniority-create-job" type="text" placeholder="Seniority">
+                  </div>
+                </div>
+                <div class="field">
+                  
+                  <div class="control">
+                    <input class="input is-link" id="input-category-create-job" type="text" placeholder="Category">
+                  </div>
+                </div>
+
+                <div class="notification error-notification is-danger is-hidden">
+                  All fields are <strong>required</strong>.
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-link" type="submit">Submit</button>
+                  </div>
+                </div>
+  
+          </form>
+          </div>
+          <div class="column is-hidden-mobile"></div>
+        </div>
+      </div>
+
+  </section>
     <section class="section section-see-details is-hidden">
         <div class="container cont-see-job">
             <div class="columns">
@@ -130,8 +186,8 @@
                             </div>
                           </div>
                           <footer class="card-footer">
-                            <button class="button card-footer-item has-background-success btn-edit-job">Edit Job</a>
-                            <button class="button card-footer-item has-background-danger btn-delete-job">Delete Job</a>
+                            <a href="#" class="card-footer-item has-text-black has-background-success btn-edit-job">Edit Job</a>
+                            <a href="#" class="card-footer-item has-text-black has-background-danger btn-delete-job">Delete Job</a>
                           </footer>
                     </div>
                 </div>
@@ -204,62 +260,6 @@
                 </div>
               </div>
         </div>
-    </section>
-    <section class="section section-create-job is-hidden">
-        <div class="container cont-create-job">
-          <div class="columns">
-            <div class="column is-hidden-mobile"></div>
-            <div class="column is-two-thirds">
-              <form action="" class="form-create-job">
-                <div class="field">
-                    <label class="label">Job Title</label>
-                    <div class="control">
-                      <input class="input is-link" id="input-title-create-job" type="text" placeholder="Job Title">
-                    </div>
-                  </div>
-    
-                  <div class="field">
-                    <label class="label">Description</label>
-                    <div class="control">
-                      <textarea class="textarea is-link" placeholder="Description" id="input-description-create-job"></textarea>
-                    </div>
-                  </div>
-
-                  <div class="field">
-                    <label class="label">Tags</label>
-                    <div class="control">
-                      <input class="input is-link" id="input-location-create-job" type="text" placeholder="Location">
-                    </div>
-                  </div>
-                  <div class="field">
-                    
-                    <div class="control">
-                      <input class="input is-link" id="input-seniority-create-job" type="text" placeholder="Seniority">
-                    </div>
-                  </div>
-                  <div class="field">
-                    
-                    <div class="control">
-                      <input class="input is-link" id="input-category-create-job" type="text" placeholder="Category">
-                    </div>
-                  </div>
-
-                  <div class="notification error-notification is-danger is-light is-hidden">
-                    All fields are <strong>required</strong>.
-                  </div>
-
-                  <div class="field">
-                    <div class="control">
-                      <button class="button is-link" type="submit">Submit</button>
-                    </div>
-                  </div>
-    
-            </form>
-            </div>
-            <div class="column is-hidden-mobile"></div>
-          </div>
-        </div>
-
     </section>
     
     <script src="./js/app.js"></script>
