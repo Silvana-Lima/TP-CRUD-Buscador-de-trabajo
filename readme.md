@@ -1,6 +1,6 @@
 ## Descripción
 
-CAREERS es un buscador de empleo, donde el empleador puede crear un trabajo especificando el puesto que busca cubrir, nivel de perfil solicitado, categoría y ubicación de la empresa. Así mismo, puede aditarlo si lo desea como también eliminarlo. 
+CAREERS es un buscador de empleo, donde el empleador puede crear un trabajo especificando el puesto que busca cubrir, nivel de perfil solicitado, categoría y ubicación de la empresa. Así mismo, puede editarlo si lo desea como también eliminarlo. 
 Por otro lado, el solicitante de empleo puede buscar a través de filtros qué puestos se adecúan a su perfil.
 
 ## Herramientas utilizadas
